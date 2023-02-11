@@ -1,4 +1,28 @@
 <!DOCTYPE html>
+<!--1. Follow best HTML and CSS practices:
+    1. Tags are correctly indented
+    2. Tags are grouped and separated by white space
+    3. Some descriptive comments are included
+    4. Commit messages are descriptive
+    5. The top of the page should have an `<h1>` heading.
+2. Have headings, using the `<h1>`, `<h2>`, etc tags
+3. Have content broken down into multiple sections, using the `<div>` tag
+4. Have paragraphs using the `<p>` tag
+5. Have lists of information, using the `<ul>` or `<ol>` tags
+6. Have images, using the `<img>` tag
+7. Add some CSS style rules, to style your website how you would like it to be.
+### Advanced (optional) tasks:
+1. Add three `<div>` tags to your website that are placed side-by-side.
+    1. Some possible CSS properties you could use to do this:
+        1. `flexbox` ([https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
+        2. `grid` ([https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/))
+        3. Note: don’t use an HTML table or the CSS `float` property
+2. Format a link to look like a button
+    1. Some ideas to get you started:
+        1. Add a `border` to the link
+        2. Add a `background-color` to the link
+        3. Add the `box-shadow` property to the link ([https://css-tricks.com/almanac/properties/b/box-shadow/](https://css-tricks.com/almanac/properties/b/box-shadow/))
+      -->
 
 <html lang="en">
   <head>
@@ -29,6 +53,27 @@
       </div>
       <div class="sliding-background"></div>
     </div>
-    <div class="gridbox-container"></div>
+    <div class="gridbox-container">
+      <div class="element1 grid-box">
+        <img
+          class="image"
+          src="./images/echo-lake.jpg"
+          alt="Echo Lake Trinity Alps"
+        />
+      </div>
+      <div class="element2 grid-box">
+        <img
+          class="image"
+          src="./images/echo-lake.jpg"
+          alt="Echo Lake Trinity Alps"
+        />
+      </div>
+      <div class="element3 grid-box">3</div>
+      <div class="element4 grid-box">4</div>
+      <div class="element5 grid-box">5</div>
+      <div class="element6 grid-box">6</div>
+      <div class="element7 grid-box">7</div>
+      <div class="element8 grid-box">8</div>
+    </div>
   </body>
 </html>
