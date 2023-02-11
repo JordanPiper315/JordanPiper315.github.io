@@ -6,14 +6,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.header {
+.header-container {
   text-align: center;
   color: green;
   justify-content: center;
   align-items: center;
   display: flex;
+  z-index: 3;
+  flex-direction: column;
 }
 
 @keyframes slide {
@@ -29,12 +32,170 @@ body {
   height: 500px;
   width: 5076px;
   animation: slide 60s linear reverse infinite;
-  position: absolute;
+  position: relative;
   background-position: 0px 0px;
 }
-.container {
+.animation-container {
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.human {
+  width: 19em;
+  position: absolute;
+  height: 31em;
+  display: flex;
+  justify-content: center;
+  top: 480px;
+  left: 500px;
+  margin-bottom: auto;
+  z-index: 6;
+}
+
+.hat {
+  background: red;
+  width: 28px;
+  height: 10px;
+  z-index: 3;
+  border-radius: 150px 150px 0 0;
+  position: absolute;
+}
+
+.hat-bill {
+  background: red;
+  width: 25px;
+  height: 2px;
+  z-index: 3;
+  border-radius: 150px 150px 0 0;
+  position: absolute;
+  right: 155px;
+  top: 7px;
+}
+
+.head {
+  background: #ffe9d1;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.neck {
+  background: #ffe9d1;
+  width: 10px;
+  height: 30px;
+  z-index: 2;
+  position: absolute;
+  top: 3%;
+}
+
+.torso {
+  background: red;
+  width: 22px;
+  height: 45px;
+  z-index: 3;
+  position: absolute;
+  top: 7%;
+  border-radius: 20%;
+}
+
+.left-leg {
+  top: 13%;
+  left: 49%;
+  rotate: -20deg;
+  background: blue;
+  width: 10px;
+  height: 45px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 20%;
+  animation: swing-forward 2s infinite linear alternate;
+  transform-origin: top;
+}
+
+@keyframes swing-forward {
+  from {
+    transform: rotate(25deg);
+  }
+}
+
+.right-leg {
+  top: 13%;
+  right: 49%;
+  rotate: 20deg;
+  background: blue;
+  width: 10px;
+  height: 45px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 20%;
+  animation: swing-back 2s infinite linear alternate;
+  transform-origin: top;
+}
+
+@keyframes swing-back {
+  from {
+    transform: rotate(-25deg);
+  }
+}
+
+.left-arm {
+  background: #ffe9d1;
+  width: 8px;
+  height: 40px;
+  z-index: 4;
+  position: absolute;
+  border-radius: 20%;
+  top: 8%;
+  right: 51%;
+  rotate: 20deg;
+  animation: swing-back 2s infinite linear alternate;
+  transform-origin: top;
+}
+@keyframes swing-back {
+  from {
+    transform: rotate(-25deg);
+  }
+}
+.right-arm {
+  background: #ffe9d1;
+  width: 8px;
+  height: 40px;
+  z-index: 2;
+  position: absolute;
+  border-radius: 20%;
+  top: 8%;
+  right: 47%;
+  rotate: -20deg;
+  animation: swing-forward 2s infinite linear alternate;
+  transform-origin: top;
+}
+
+@keyframes swing-forward {
+  from {
+    transform: rotate(25deg);
+  }
+}
+.backpack {
+  background: #ffd700;
+  width: 20px;
+  height: 40px;
+  z-index: 5;
+  position: absolute;
+  border-radius: 20%;
+  top: 7%;
+  right: 42%;
+}
+.sleeping-bag {
+  background: green;
+  width: 20px;
+  height: 20px;
+  z-index: 5;
+  position: absolute;
+  border-radius: 100%;
+  top: 5%;
+  right: 42%;
 }
