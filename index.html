@@ -1,42 +1,25 @@
 <!DOCTYPE html>
 <!--1. Follow best HTML and CSS practices:
     1. Tags are correctly indented
-    2. Tags are grouped and separated by white space
     3. Some descriptive comments are included
-    4. Commit messages are descriptive
-    5. The top of the page should have an `<h1>` heading.
-2. Have headings, using the `<h1>`, `<h2>`, etc tags
-3. Have content broken down into multiple sections, using the `<div>` tag
-4. Have paragraphs using the `<p>` tag
 5. Have lists of information, using the `<ul>` or `<ol>` tags
-6. Have images, using the `<img>` tag
-7. Add some CSS style rules, to style your website how you would like it to be.
-### Advanced (optional) tasks:
-1. Add three `<div>` tags to your website that are placed side-by-side.
-    1. Some possible CSS properties you could use to do this:
-        1. `flexbox` ([https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/))
-        2. `grid` ([https://css-tricks.com/snippets/css/complete-guide-grid/](https://css-tricks.com/snippets/css/complete-guide-grid/))
-        3. Note: don’t use an HTML table or the CSS `float` property
-2. Format a link to look like a button
-    1. Some ideas to get you started:
-        1. Add a `border` to the link
-        2. Add a `background-color` to the link
-        3. Add the `box-shadow` property to the link ([https://css-tricks.com/almanac/properties/b/box-shadow/](https://css-tricks.com/almanac/properties/b/box-shadow/))
       -->
 
 <html lang="en">
   <head>
-    <!-- Add a comment here -->
     <meta charset="UTF-8" />
     <title>Backpacking</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <!--Header Container-->
     <div class="header-container">
       <h1>Backpacking</h1>
       <h2>An Appreciation for the Little Things</h2>
     </div>
+
+    <!--Animation Container-->
     <div class="animation-container">
       <div class="human">
         <div class="hat"></div>
@@ -53,6 +36,8 @@
       </div>
       <div class="sliding-background"></div>
     </div>
+
+    <!--Gridbox Container-->
     <div class="gridbox-container">
       <div class="element1 grid-box">
         <img
@@ -129,19 +114,24 @@
         <p>Meaningful Adventure</p>
       </div>
     </div>
+
+    <!--Links Container-->
     <div class="links-container">
       <a
         href="https://www.rei.com/learn/expert-advice/backpacking-beginners.html"
-        >Tips to get Started</a
       >
+        Tips to get Started
+      </a>
       <a
         href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"
-        >Packing List</a
       >
-      <a href="https://thebigoutside.com/my-top-10-favorite-backpacking-trips/"
-        >America's Top 10 Backpacking Trips</a
-      >
+        Packing List
+      </a>
+      <a href="https://thebigoutside.com/my-top-10-favorite-backpacking-trips/">
+        America's Top 10 Backpacking Trips
+      </a>
     </div>
+
     <footer>
       <img class="footer" src="./images/footer.jpg" />
     </footer>

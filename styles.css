@@ -30,7 +30,7 @@ body {
   z-index: 3;
   flex-direction: column;
 }
-
+/*animation for sliding background*/
 @keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
@@ -39,6 +39,7 @@ body {
     transform: translate3d(-1692px, 0, 0);
   }
 }
+
 .sliding-background {
   background: url("./images/sliding-background.png") repeat-x;
   height: 500px;
@@ -48,6 +49,7 @@ body {
   background-position: 0px 0px;
   background-color: #9df051;
 }
+
 .animation-container {
   overflow: hidden;
   display: flex;
@@ -129,6 +131,7 @@ body {
   transform-origin: top;
 }
 
+/*animation for left leg*/
 @keyframes swing-forward {
   from {
     transform: rotate(25deg);
@@ -149,6 +152,7 @@ body {
   transform-origin: top;
 }
 
+/*animation for right leg*/
 @keyframes swing-back {
   from {
     transform: rotate(-25deg);
@@ -168,11 +172,14 @@ body {
   animation: swing-back 2s infinite ease-in-out alternate;
   transform-origin: top;
 }
+
+/*animation for left arm*/
 @keyframes swing-back {
   from {
     transform: rotate(-25deg);
   }
 }
+
 .right-arm {
   background: #ffe9d1;
   width: 8px;
@@ -187,11 +194,13 @@ body {
   transform-origin: top;
 }
 
+/*animation for right arm*/
 @keyframes swing-forward {
   from {
     transform: rotate(25deg);
   }
 }
+
 .backpack {
   background: #ffd700;
   width: 20px;
@@ -202,6 +211,7 @@ body {
   top: 7%;
   right: 42%;
 }
+
 .sleeping-bag {
   background: green;
   width: 20px;
@@ -254,48 +264,7 @@ body {
   transform: translate(0, -0.5rem) scale(1.01);
 }
 
-.element1 {
-  grid-area: box1;
-}
-.element2 {
-  grid-area: box2;
-}
-.element3 {
-  grid-area: box3;
-}
-.element4 {
-  grid-area: box4;
-}
-.element5 {
-  grid-area: box5;
-}
-.element6 {
-  grid-area: box6;
-}
-.element7 {
-  grid-area: box7;
-}
-.element8 {
-  grid-area: box8;
-}
-.element9 {
-  grid-area: box9;
-}
-.element10 {
-  grid-area: box10;
-}
-.element12 {
-  grid-area: box12;
-}
-.element13 {
-  grid-area: box13;
-}
-.element14 {
-  grid-area: box14;
-}
-.element15 {
-  grid-area: box15;
-}
+/*animation for fade hover effect on gridbox*/
 @keyframes fadein {
   0% {
     transform: scale(0);
@@ -306,6 +275,63 @@ body {
   100% {
     transform: scale(1);
   }
+}
+
+/*gridbox area alignment*/
+.element1 {
+  grid-area: box1;
+}
+
+.element2 {
+  grid-area: box2;
+}
+
+.element3 {
+  grid-area: box3;
+}
+
+.element4 {
+  grid-area: box4;
+}
+
+.element5 {
+  grid-area: box5;
+}
+
+.element6 {
+  grid-area: box6;
+}
+
+.element7 {
+  grid-area: box7;
+}
+
+.element8 {
+  grid-area: box8;
+}
+
+.element9 {
+  grid-area: box9;
+}
+
+.element10 {
+  grid-area: box10;
+}
+
+.element12 {
+  grid-area: box12;
+}
+
+.element13 {
+  grid-area: box13;
+}
+
+.element14 {
+  grid-area: box14;
+}
+
+.element15 {
+  grid-area: box15;
 }
 
 .image {
