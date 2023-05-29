@@ -104,11 +104,7 @@ nav ul li {
   font-family: var(--font-family2);
   font-weight: bold;
   font-size: 8rem;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
   padding: 50px;
-  /* text-shadow: 0 0 10px black, 0 0 10px gray;
-  color: white; */
 }
 
 .main h1 {
@@ -129,12 +125,12 @@ nav ul li {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-
+  padding: 20px;
 }
 
 .buttons button {
   color: white;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 15px;
   border: none;
   outline: none;
@@ -203,7 +199,7 @@ nav ul li {
 
 .hero img {
   height: 30.5rem;
-  width: 37.5rem;
+  width: auto;
 }
 
 .bio {
@@ -213,28 +209,33 @@ nav ul li {
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
 
-.bio h1 {
+.bio h2 {
   margin-bottom: var(--bottom-margin);
+  color: white;
 }
 
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+  color: white;
 }
 
 .more-about {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color2);
   padding: 1rem 6rem;
+  color: white;
 }
 
 .more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
+  color: white;
 }
 
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  color: white;
 }
 
 .skills {
@@ -258,15 +259,15 @@ nav ul li {
 }
 
 .icon-card {
-  background-color: #fff;
+  background-color: black;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px white;
   padding: 20px;
   margin: 10px;
 }
 
 .projects {
-  background-color: var(--bg-color);
+  background-color: black;
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -291,26 +292,31 @@ nav ul li {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
+  background-color: black;
 }
 
 .project-container p {
   padding: 0.4rem;
+  color: white;
 }
 
-.project-title {
+.projects-title {
   margin-bottom: var(--bottom-margin);
+  color: white;
 }
 
 .project-details {
   margin-bottom: var(--bottom-margin);
+  color: white;
 }
 
 .project-card {
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
+  box-shadow: 0 3px 10px white;
   padding: 20px;
   margin: 10px;
+  background-color: black;
 }
 
 .contact {
@@ -320,6 +326,7 @@ nav ul li {
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
+  color: white;
 }
 
 .contact-form-container {
@@ -328,7 +335,7 @@ nav ul li {
   padding: 0 auto;
   border-radius: 0.938rem;
   border-radius: 5px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
+  box-shadow: 0 3px 10px white;
 }
 
 .contact-form-container label {
@@ -394,6 +401,7 @@ footer {
   padding: 1.25rem;
   text-align: center;
   margin: 2rem 0 0;
+  color: white;
 }
 
 .scroll-up {
