@@ -103,11 +103,11 @@ nav ul li {
   display: flex;
   font-family: var(--font-family2);
   font-weight: bold;
-  font-size: 8rem;
   padding: 50px;
 }
 
 .main h1 {
+  font-size: 18vw;
   align-self: auto;
   text-align: center;
   display: flex;
@@ -117,6 +117,7 @@ nav ul li {
   #a57154, #dcc28f, #676c5a, #5f727d, #746883 80%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  padding-bottom: 0px;
 }
 
 .buttons {
@@ -130,7 +131,7 @@ nav ul li {
 
 .buttons button {
   color: white;
-  font-size: 3rem;
+  font-size: 5vw;
   padding: 15px;
   border: none;
   outline: none;
@@ -430,12 +431,6 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
-  .main h1 {
-    font-size: 3rem;
-  }
-  .buttons button {
-    font-size: 2rem;
-  }
 } 
 
 @media screen and (max-width: 720px) {
@@ -445,7 +440,7 @@ footer {
   }
   nav ul {
     position: fixed;
-    background-color: var(--bg-color);
+    background-color: black;
     flex-direction: column;
     top: 86px;
     left: 10%;
@@ -462,12 +457,6 @@ footer {
   }
   nav ul.show {
     transform: translateX(0);
-  }
-  .main h1 {
-    font-size: 6rem;
-  }
-  .buttons button {
-    font-size: 2rem;
   }
   .hero {
     margin-top: -4rem;
