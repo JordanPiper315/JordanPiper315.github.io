@@ -348,6 +348,7 @@ nav ul li {
 .contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
+  color: var(--primary-color);
 }
 
 .contact-form-container .input-field {
@@ -359,6 +360,7 @@ nav ul li {
   border: 2px outset var(--primary-color);
   font-size: 0.875rem;
   outline: none;
+  color: var(--primary-color);
 }
 
 .input-field::placeholder {
