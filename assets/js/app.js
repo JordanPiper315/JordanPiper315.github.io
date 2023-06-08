@@ -1,13 +1,13 @@
 // scroll to top functionality
-// const scrollUp = document.querySelector("#scroll-up");
+const scrollUp = document.querySelector("#scroll-up");
 
-// scrollUp.addEventListener("click", () => {
-//   window.scrollTo({
-//     top: 0,
-//     left: 0,
-//     behavior: "smooth",
-//   });
-// });
+scrollUp.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: "smooth",
+  });
+});
 
 // Nav hamburgerburger selections
 
@@ -24,3 +24,18 @@ navLink.forEach((link) =>
 link.addEventListener("click", () => {
   ul.classList.remove('show')
 }))
+
+var modal = document.getElementById('myModal')
+var btn = document.getElementById('modalBtn')
+var span = document.getElementsByClassName('close')[0]
+btn.onclick = function() {
+  modal.style.display = "block"
+}
+span.onclick = function() {
+  modal.style.display = 'none'
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'
+  }
+}
